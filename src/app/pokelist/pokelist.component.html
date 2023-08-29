@@ -1,0 +1,4 @@
+<app-pokecard 
+    *ngFor= "let pokemon of pokemons; index as i" 
+    [pokemon]="pokemon"
+    [numero]="i + 1"></app-pokecard>
