@@ -7,11 +7,6 @@ import { PokemonService } from '../services/pokemon.service';
   styleUrls: ['./pokelist.component.css']
 })
 export class PokelistComponent {
-  pokemons = [
-    'Bulbasaur',
-    'Ivysaur',
-    'Venosaur'
-  ];
+  constructor(public pokemonService: PokemonService){}
 
-  constructor(private pokemonService: PokemonService){}
 }
